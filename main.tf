@@ -30,7 +30,7 @@ resource "aviatrix_vpc" "egress_vpc" {
     region = local.region
   }
 }
-
+#
 #Firewall instances
 resource "aviatrix_firewall_instance" "firewall_instance_1" {
   count                  = local.is_aviatrix ? 0 : local.fw_amount_instance_1
